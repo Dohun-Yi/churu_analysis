@@ -1,17 +1,26 @@
-# Global Cell Line Contamination: Regional Variations and Escalating Risks
-# Dohun Yi and Jin-Wu Nam
+# Global cell line contamination: regional variations and escalating risks
+### Dohun Yi and Jin-Wu Nam
 
-# This repository contains codes used for all analyses of the CHURU study
+This repository contains code used for all analyses of the CHURU study.
 
+## Directory Structure
 
-# Below directory contains the code responsible for benchmarking analylsis on speed and accuracy
-benchmark_performance:
-    src_pipeline # processing of raw data to variant calling and identification
-    src_analysis # comparison of time and accuracy, and mixture simulation
+---
 
+### `benchmark_performance`
+Contains code responsible for benchmarking analysis on speed and accuracy:
+- **`src_pipeline`**  
+  Processing of raw data to variant calling and identification.
+- **`src_analysis`**  
+  Comparison of time and accuracy, and mixture simulation.
 
-# Below directory contains the code responsible for re-authentication of public data and related analysis
-public_data_reauthentication:
-    1_download_and_filter # acquisition of public data and parsing, data selelction
-    2_authenticate_on_AWS # main re-authentication codes for Amazon Web Service
-    3_analysis_data # all related contamination analysis and figures
+---
+
+### `public_data_reauthentication`
+Contains code responsible for re-authentication of public data and related analysis:
+1. **`1_download_and_filter`**  
+   Acquisition of public data, parsing, and data selection.
+2. **`2_authenticate_on_AWS`**  
+   Main re-authentication code for Amazon Web Service.
+3. **`3_analysis_data`**  
+   All related contamination analysis and figure generation.
