@@ -1,0 +1,47 @@
+{
+  "##_COMMENT1": "Input",
+  "RNAseq.inputBam": "BAMFILE",
+  
+  "##_COMMENT2": "REFERENCE FILES",
+  "RNAseq.refFasta": "[WORKDIRECTORY]/reference/hg38/hg38.fa",
+  "RNAseq.refFastaIndex": "[WORKDIRECTORY]/reference/hg38/hg38.fa.fai",
+  "RNAseq.refDict": "[WORKDIRECTORY]/reference/hg38/hg38.dict",
+
+  "##_COMMENT4": "RESOURCE FILES",
+  "RNAseq.dbSnpVcf": "[WORKDIRECTORY]/reference/broad_institute/hg38/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "RNAseq.dbSnpVcfIndex": "[WORKDIRECTORY]/reference/broad_institute/hg38/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "RNAseq.knownVcfs": [
+    "[WORKDIRECTORY]/reference/broad_institute/hg38/Mills_and_1000G_gold_standard.indels.hg38.vcf",
+    "[WORKDIRECTORY]/reference/broad_institute/hg38/Homo_sapiens_assembly38.known_indels.vcf"
+  ],
+  "RNAseq.knownVcfsIndices": [
+    "[WORKDIRECTORY]/reference/broad_institute/hg38/Mills_and_1000G_gold_standard.indels.hg38.vcf.idx",
+    "[WORKDIRECTORY]/reference/broad_institute/hg38/Homo_sapiens_assembly38.known_indels.vcf.idx"
+  ],
+  "RNAseq.annotationsGTF": "[WORKDIRECTORY]/reference/hg38/refseq/GRCh38_latest_genomic.gtf",
+  
+  "##_COMMENT4": "DOCKERS",
+  "RNAseq.gatk4_docker_override": "broadinstitute/gatk:4.3.0.0",
+  "RNAseq.star_docker_override": "quay.io/humancellatlas/secondary-analysis-star:v0.2.2-2.5.3a-40ead6e",
+  "#RNAseq.gitc_docker_override": "String? (optional)",
+  
+  "##_COMMENT5": "PATHS",
+  "#RNAseq.gatk_path_override": "/gatk/gatk",
+
+  "##_COMMENT6": "PREEMPTIBLES",
+  "##RNAseq.preemptible_tries": "(optional) Int?",
+  
+  "##_COMMENT7": "Misc",
+  "RNAseq.StarAlign.num_threads": "80",
+  "#RNAseq.StarAlign.star_limitOutSJcollapsed": "(optional) Int?",
+  "RNAseq.StarAlign.additional_disk": "50",
+  "RNAseq.StarAlign.star_mem_max_gb": "300",
+  "#RNAseq.StarGenerateReferences.addtional_disk": "(optional) Int?",
+  "#RNAseq.StarGenerateReferences.num_threads": "(optional) Int?",
+  "#RNAseq.StarGenerateReferences.mem_gb": "(optional) Int?",
+  "RNAseq.haplotypeScatterCount": "2",
+  "#RNAseq.use_gatk4_for_all_tools": "(optional) Boolean",
+  "#RNAseq.minConfidenceForVariantCalling": "(optional) Int?",
+  "RNAseq.zippedStarReferences": "[WORKDIRECTORY]/resources/STAR2_5.tar.gz",
+  "#RNAseq.readLength": "(optional) Int?"
+}
